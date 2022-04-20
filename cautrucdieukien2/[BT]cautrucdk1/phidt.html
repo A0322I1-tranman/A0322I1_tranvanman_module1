@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table border="1px solid black" cellspacing="0px">
+    <tr>
+        <th>Phút</th>
+        <th>cước mỗi phút</th>
+    </tr>
+    <tr>
+        <th>0-30</th>
+        <th>500</th>
+    </tr>
+    <tr>
+        <th>30-55</th>
+        <th>1000</th>
+    </tr>
+    <tr>
+        <th>>55</th>
+        <th>1200</th>
+    </tr>
+
+</table><br>
+<input id="min" type="text" placeholder="nhập số phút">
+<input type="submit" value="nhập" onclick="geta()">
+<p style="border-block: 20px" id="screen"></p>
+<script>
+    function geta() {
+        let time = parseInt(document.getElementById("min").value);
+        let total = 30000;
+        if (time < 30){
+            total = time * 500;
+            document.getElementById("screen").innerText = total;
+        }else if (time > 30 && time < 55){
+            total = time * 1000;
+            document.getElementById("screen").innerText = total;
+        }else {
+            total = time * 1200;
+            document.getElementById("screen").innerText =total;
+        }
+
+    }
+</script>
+</body>
+</html>

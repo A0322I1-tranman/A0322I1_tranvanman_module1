@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px solid black" cellspacing="0px">
+    <tr>
+        <th>Doanh thu</th>
+        <th>Hoa hồng</th>
+    </tr>
+    <tr>
+        <td>0-300</td>
+        <td>3%</td>
+    </tr>
+    <tr>
+        <td>300-400</td>
+        <td>5%</td>
+    </tr>
+    <tr>
+        <td>>400</td>
+        <td>6%</td>
+    </tr>
+</table><br>
+<input type="text" id="dt" placeholder="nhập doanh thu">
+<input type="submit" id="sub" value="nhập vào" onclick="getdata()">
+<p style="border-block: 2px" id="result"></p>
+<script>
+
+    function getdata() {
+        let dthu = parseInt(document.getElementById("dt").value);
+        if (dthu < 300){
+            document.getElementById("result").innerText = 'doanh thu nhận tháng' + dthu*3/100;
+        } else  if (300 < dthu && dthu < 400){
+            document.getElementById("result").innerText = 'doanh thu nhận tháng' + dthu*6/100;
+        } else {
+            document.getElementById("result").innerText = 'doanh thu nhận tháng' + dthu*9/100;
+        }
+
+    }
+</script>
+
+</body>
+</html>
