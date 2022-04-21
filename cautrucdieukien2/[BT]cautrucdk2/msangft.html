@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="cel" placeholder="nhập số mét"></td>
+        <td><input type="submit" onclick="but()" value="submit"></td>
+    </tr>
+    <tr>
+        <td><span style="color: blue" id="screen"></span> </td>
+    </tr>
+</table>
+<script>
+
+    function but() {
+        let num =  parseInt(document.getElementById("cel").value);
+        let ft = num * 3.2808;
+        document.getElementById("screen").innerText = ft;
+
+    }
+
+</script>
+
+</body>
+</html>

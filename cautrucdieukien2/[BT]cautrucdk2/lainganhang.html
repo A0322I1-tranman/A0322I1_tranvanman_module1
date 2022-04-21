@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nogoc" placeholder="nhập số tiền nợ">
+<input type="text" id="lai" placeholder="nhập lãi suất">
+<input type="text" id="tg" placeholder="thời gian vay">
+<input type="submit" onclick="bta()" value="click"><br>
+<span style="color: red; display: block" id="screen"></span>
+<script>
+    function bta() {
+        let a = Number(document.getElementById("nogoc").value);
+        let b = Number(document.getElementById("lai").value);
+        let c = Number(document.getElementById("tg").value);
+        let TLHT = a * (b / c);
+        document.getElementById("screen").innerText = TLHT;
+
+    }
+</script>
+
+</body>
+</html>

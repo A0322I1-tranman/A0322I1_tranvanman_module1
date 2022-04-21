@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr,th,td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table border="1px solid black" cellspacing="0px">
+    <tr>
+    <th>Bậc thuế</th>
+    <th>Thu nhập</th>
+    <th>Thuế suất</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>5</td>
+        <td>5%</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>5-10</td>
+    <td>10%</td>
+</tr>
+    <tr>
+    <td>3</td>
+    <td>10-18</td>
+    <td>15%</td>
+</tr>
+</table><br>
+<input id="bc" type="text" placeholder="nhập số bậc">
+<input id="tn" type="text" placeholder="nhập thu nhập">
+<input id="bt" onclick="dep()" type="button" value="click"><br>
+<p id="res" style="display: block; color: blue">Result</p>
+<script>
+    function dep() {
+        let b = parseInt(document.getElementById("bc").value);
+        let bt = parseInt(document.getElementById("tn").value);
+        let TNCN = bt;
+        if (b == 1 && bt < 5) {
+            TNCN = TNCN * (5 / 100);
+            document.getElementById("res").innerText = TNCN;
+        } else if (b == 2 && bt < 10) {
+            TNCN = TNCN * (10 / 100);
+            document.getElementById("res").innerText = TNCN;
+        } else {
+            TNCN = TNCN * (15 / 100);
+            document.getElementById("res").innerText = TNCN;
+        }
+    }
+</script>
+</body>
+</html>

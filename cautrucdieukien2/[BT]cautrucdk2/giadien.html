@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr,td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table border="1px solid black" cellspacing="0px">
+    <tr>
+        <th>STT</th>
+        <th>Sản lượng (kWh)</th>
+        <th>Giá điện ( đồng )</th>
+    </tr>
+    <tr>
+        <td>Bậc thang 1</td>
+        <td>0-50</td>
+        <td>1678</td>
+    </tr>
+    <tr>
+        <td>Bậc thang 2</td>
+        <td>51-100</td>
+        <td>1734</td>
+    </tr>
+
+</table><br>
+<input id="bthi" type="text" placeholder=" nhập bậc thang">
+<input id="date" type="text" placeholder=" nhập số ngày">
+<input id="P" type="text" placeholder=" nhập số kWh">
+<input type="submit" onclick="sub()" value="Click me"><br>
+<p id="bt" style="color: red; display: block"></p>
+<script>
+    function sub() {
+        let bt = parseInt(document.getElementById("bthi").value);
+        let dte = parseInt(document.getElementById("date").value);
+        let p = parseInt(document.getElementById("P").value);
+        let  mti = bt * dte * p;
+        if (mti < 50){
+            mti = mti * 1678;
+            document.getElementById("bt").innerText = "Số tiền phải trả " + mti;
+        }else {
+            mti = mti * 1734;
+            document.getElementById("bt").innerText = "Số tiền phải trả " + mti;
+        }
+    }
+
+</script>
+
+</body>
+</html>

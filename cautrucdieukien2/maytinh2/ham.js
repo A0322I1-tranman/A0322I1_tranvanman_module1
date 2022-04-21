@@ -16,13 +16,13 @@ function opera(x) {
             value = value + x;
             break;
         case "-":
-             value = value - x;
+             value = value + x;
             break;
         case "*":
-            value = value * x;
+            value = value + x;
             break;
         case "/":
-            value = value / x;
+            value = value + x;
             break;
         case "=":
             value = eval(value);

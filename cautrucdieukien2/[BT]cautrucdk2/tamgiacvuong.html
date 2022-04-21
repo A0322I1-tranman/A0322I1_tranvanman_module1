@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="cel" placeholder="nhập cạnh a"></td>
+        <td><input type="text" id="cel1" placeholder="nhập cạnh b"></td>
+        <td><input type="submit" onclick="but()" value="submit"></td>
+    </tr>
+    <tr>
+        <td><span style="color: blue" id="screen"></span> </td>
+    </tr>
+</table>
+<script>
+
+    function but() {
+        let numa =  parseInt(document.getElementById("cel").value);
+        let numb =  parseInt(document.getElementById("cel1").value);
+        let dt = (numa * numb) / 2;
+        document.getElementById("screen").innerText = dt;
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="cel" placeholder="nhập nhiệt độ C"></td>
+        <td><input type="submit" onclick="but()" value="submit"></td>
+    </tr>
+    <tr>
+        <td><span style="color: blue" id="screen"></span> </td>
+    </tr>
+</table>
+<script>
+
+    function but() {
+        let num =  parseInt(document.getElementById("cel").value);
+        let F = num * 9 / 5 + 32;
+        document.getElementById("screen").innerText = F;
+
+    }
+
+</script>
+</body>
+</html>
