@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do u love me?</title>
+</head>
+<body>
+<h1 style="position: absolute;left: 200px;top: 100px">Do you love me?</h1>
+<input type="submit" onclick="hi()" value="Yes" style="position: absolute; left: 200px;top: 200px">
+<input type="submit" id="fi" onmouseover="hig()" value="No" style="position: absolute; left: 300px;top: 200px">
+<script>
+    function hi() {
+        alert(" I love you too! <3");
+    }
+    function hig() {
+        let no = document.getElementById("fi");
+        let x = Math.random()*200;
+        let y = Math.random()*200;
+         no.style.left = x + "px";
+         no.style.top = y + "px;"
+    }
+</script>
+
+</body>
+</html>

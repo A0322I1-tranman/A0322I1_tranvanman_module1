@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" id="1" onclick="but('good')" value="Good"><br>
+<input type="checkbox" id="2" onclick="but('fast')" value="Fast"><br>
+<input type="checkbox" id="3" onclick="but('cheap')" value="Cheap">
+<script>
+    function but(value) {
+        let a = document.getElementById("1");
+        let b = document.getElementById("2");
+        let c = document.getElementById("3");
+         if (a.checked && b.checked && c.checked){
+             if (value == 'good') {
+                 b.checked = false;
+             }else if (value == 'cheap'){
+                 a.checked = false;
+             }else if (value == 'fast'){
+                 c.checked = false;
+             }
+         }
+    }
+</script>
+
+</body>
+</html>
