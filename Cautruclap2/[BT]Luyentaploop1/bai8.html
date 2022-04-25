@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" onclick="getd()" value="Chơi">
+
+<script>
+function getd() {
+    let x;
+    let j; //-10 18 5 0
+
+        for (j=1;j<=3;j++) {// ng khi x khác 0 thì làm ...
+            if (x > 25) {
+                x = parseInt(prompt("Nhap so x be hon : " + x));
+            } else {
+                // x < 0
+                x = parseInt(prompt("Nhap so x lơn hon : " + x));
+            }
+            if (x == 25) {
+                document.write('Dingdong! Còn chờ gì nữa? ')
+                break;
+            }
+
+        }
+    document.write("F5 đê!")
+
+
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

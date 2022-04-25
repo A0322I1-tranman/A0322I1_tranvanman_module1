@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('nhập số tiền'));
+    let b = parseFloat(prompt('nhập số tháng'));
+    let c = parseFloat(prompt('nhập số lãi suất'));
+    c=c/100;
+    while (b>0){
+        a=(a*c)/b;
+        b--;
+    }
+    document.write('số tiền là: ' + a);
+
+</script>
+
+</body>
+</html>

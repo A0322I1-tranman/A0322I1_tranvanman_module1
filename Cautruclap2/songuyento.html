@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="soNguyenTo"></p>
+<script>
+    let number=parseInt(prompt('nhập số lượng số nguyên tố'));
+    let count=0;
+    let N=2;
+    let j=1;
+    while (count<number){
+        if (N>2){
+            if (N%j==0&&N%1==0){
+                N++;
+                j--;
+                document.write(N);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
