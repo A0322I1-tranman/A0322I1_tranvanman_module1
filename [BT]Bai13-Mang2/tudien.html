@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<input type="text" id="nofi" name="timkiem" placeholder="nhập từ tiếng anh">
+<input type="button" onclick="getda()" value="Click">
+</form>
+<script>
+    function getda() {
+        let a = document.getElementById("nofi").value;
+        let stra = ["lock","buy","sell"];
+        let strb = ["khóa","mua","bán"];
+            if (stra.indexOf(a)>-1){
+                document.write(a +' là ' + strb[stra.indexOf(a)]);
+            }else {
+                alert('Không tìm thấy');
+        }
+
+
+    }
+</script>
+
+</body>
+</html>
