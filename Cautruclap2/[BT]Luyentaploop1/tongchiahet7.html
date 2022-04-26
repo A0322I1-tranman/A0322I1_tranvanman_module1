@@ -6,21 +6,17 @@
 </head>
 <body>
 <script>
-
-   let j=0;
-   let total=0;
-   for (i=0;;i++){
-       if (i%7==o){
-           total+=i;
-           j++;
-           if (j==30){
-               break;
-           }
-       }
-
-   }
-   document.write(total);
-
+    let i=0;
+     let j=0;
+     let total=0;
+     while (j<30){
+         if (i%7==0){
+             j+=1;
+             total+=i;
+         }
+         i+=1;
+     }
+     document.write(total);
 </script>
 
 </body>

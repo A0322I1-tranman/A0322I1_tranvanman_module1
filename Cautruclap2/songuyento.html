@@ -5,21 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<p id="soNguyenTo"></p>
 <script>
-    let number=parseInt(prompt('nhập số lượng số nguyên tố'));
-    let count=0;
-    let N=2;
-    let j=1;
-    while (count<number){
-        if (N>2){
-            if (N%j==0&&N%1==0){
-                N++;
-                j--;
-                document.write(N);
-            }
-        }
-    }
+   let number=parseInt(prompt('Nhập số lượng số nguyên tố'));
+   let N=2;
+   let count=0;
+   while (count<number){
+       if (N>2){
+           for (i=1;i<=(N-1);i++){
+               if (N%i==0){
+                   document.write(i);
+                   count++;
+               }
+               N++;
+           }
+       }
+   }
 </script>
 
 </body>
