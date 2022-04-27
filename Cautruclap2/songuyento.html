@@ -7,18 +7,25 @@
 <body>
 <script>
    let number=parseInt(prompt('Nhập số lượng số nguyên tố'));
-   let N=2;
    let count=0;
-   while (count<number){
-       if (N>2){
-           for (i=1;i<=(N-1);i++){
-               if (N%i==0){
-                   document.write(i);
-                   count++;
-               }
-               N++;
+   let m=2;
+   while (true){
+       let mark =1;
+       let i;
+       for (i=2;i<=Math.sqrt(m);i++){
+           if (m%i==0){
+               mark=0;
+               break;
            }
        }
+       if (mark==1){
+           count++;
+           document.write(m+"<br/>");
+       }
+       if (count>=number){
+           break;
+       }
+       m++;
    }
 </script>
 
