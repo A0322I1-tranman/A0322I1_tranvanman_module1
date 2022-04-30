@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="FAVL()">
+<textarea id="text"></textarea>
+<script>
+    let a = [];
+    let strb = " Đã từng là DCT";
+    a=strb.split('');
+    let out="";
+    function FAVL() {
+        let c = document.getElementById("text").value;
+        let lengthtext=c.length;
+        if (lengthtext>0){
+            for (i=1;i<=lengthtext;i++){
+                out+=a[i];
+                if (i===15){
+                    document.getElementById("text").value="";
+                    out="";
+                }
+            }
+        }
+        document.getElementById("text").value = out;
+        out="";
+        setTimeout("FAVL()",1);
+    }
+</script>
+
+</body>
+</html>

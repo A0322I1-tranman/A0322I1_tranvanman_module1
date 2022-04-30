@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i = prompt("nhập số phần tử của mảng");
+    let array=[];
+    for (j=0;j<i;j++){
+        let z = prompt('nhập số chuỗi');
+        array.push(z);
+    }
+    if (array.indexOf("-")>-1){
+        array.splice(array.indexOf("-"),1,"_");
+    }
+    document.write(array);
+</script>
+</body>
+</html>

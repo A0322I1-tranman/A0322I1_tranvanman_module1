@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eee46ad-5003-47f7-9e74-76cbdfaf1953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/[BT]Luyentapmang1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tic-tac-toe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Cautruclap2/[BT]Luyentaploop1/bai5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cautruclap2/[BT]Luyentaploop1/bai5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Cautruclap2/[BT]Luyentaploop1/tongchiahet7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cautruclap2/[BT]Luyentaploop1/tongchiahet7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Cautruclap2/songuyento.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cautruclap2/songuyento.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[BT]Luyentapmang2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[BT]Luyentapmang2/.idea/[BT]Luyentapmang2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[BT]Luyentapmang2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[BT]Luyentapmang2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[BT]Luyentapmang2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[BT]Luyentapmang2/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../faking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Gitproject" beforeDir="false" afterPath="$PROJECT_DIR$/../../Gitproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tudien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tudien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tic-tac-toe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tic-tac-toe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3_ma_gia_luu_do" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_ma_gia_luu_do" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Cautruclap2/[BT]Luyentaploop1/tongchiahet7.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[BT]Luyentapmang2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1651026306807</updated>
       <workItem from="1651026308072" duration="3617000" />
-      <workItem from="1651056592842" duration="1557000" />
+      <workItem from="1651056592842" duration="12609000" />
+      <workItem from="1651119169049" duration="1067000" />
     </task>
     <servers />
   </component>
@@ -74,9 +79,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="758" y="134" key="FileChooserDialogImpl" timestamp="1651057668289">
+    <state x="758" y="134" key="FileChooserDialogImpl" timestamp="1651120304286">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="758" y="134" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1651057668289" />
+    <state x="758" y="134" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1651120304285" />
   </component>
 </project>
