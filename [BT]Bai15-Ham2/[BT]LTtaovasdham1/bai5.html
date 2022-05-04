@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let b=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    function mamtch(value) {
+      if (a.indexOf(value)>-1){
+          let i = a.indexOf(value);
+          return b[i];
+      }else {
+          alert('Không tìm thây ngôi sao nào')
+      }
+    }
+    let n = prompt("nhập tên ngôi sao");
+    alert(mamtch(n));
+</script>
+</body>
+</html>

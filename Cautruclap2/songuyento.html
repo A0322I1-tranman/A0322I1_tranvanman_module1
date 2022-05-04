@@ -6,27 +6,28 @@
 </head>
 <body>
 <script>
-   let number=parseInt(prompt('Nhập số lượng số nguyên tố'));
-   let count=0;
-   let m=2;
-   while (true){
-       let mark =1;
-       let i;
-       for (i=2;i<=Math.sqrt(m);i++){
-           if (m%i==0){
-               mark=0;
-               break;
-           }
-       }
-       if (mark==1){
-           count++;
-           document.write(m+"<br/>");
-       }
-       if (count>=number){
-           break;
-       }
-       m++;
-   }
+    let number=parseInt(prompt('Nhập số lượng số nguyên tố'));
+    let count=0;
+    let m=2;
+    while (true){
+        let mark =1;
+        let i;
+        for (i=2;i<=Math.sqrt(m);i++){
+            if (m%i==0){
+                mark=0;
+                break;
+            }
+        }
+        if (mark==1){
+            count++;
+            document.write(m+"<br/>");
+        }
+        if (count>=number){
+            break;
+        }
+        m++;
+    }
+
 </script>
 
 </body>

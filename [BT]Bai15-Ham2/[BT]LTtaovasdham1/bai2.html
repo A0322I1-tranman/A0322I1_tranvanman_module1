@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="myfun()" >
+<script>
+    function myfun() {
+      let a = arguments[0];
+       a+=1;
+       return a;
+    }
+    let i = parseFloat(prompt("nhập tham số"));
+    let b = myfun(i);
+    document.write(b);
+
+
+</script>
+</body>
+</html>

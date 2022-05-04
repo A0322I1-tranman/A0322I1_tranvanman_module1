@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        let i = prompt("nhập chuỗi");
+        let a = [];
+        a.push(i);
+        for (s=0;s<a.length;s++){
+            if (a.reverse(s)==a[i]){
+                document.write("chuỗi đối xứng");
+                break;
+            }else {
+                document.write("chuỗi không đối xứng");
+            }
+        }
+    }
+   let result = isPalindrome();
+    document.write(result);
+</script>
+</body>
+</html>

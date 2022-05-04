@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+
+       let N = 2;
+       let count = 0;
+       while (number){
+           let m=1;
+           for (j=2;j<=Math.sqrt(N);j++){
+               if (N%j==0){
+                   m=0;
+                   break;
+               }
+           }
+           if (m==1){
+               count++;
+               document.write(N + "<br/>");
+           }
+           if (count>=i){
+               break;
+           }
+           N++;
+       }
+    }
+    let i = parseFloat(prompt("nhập số lượng số nguyên tố"));
+    let z = isPrime(i);
+    document.write(z);
+</script>
+</body>
+</html>

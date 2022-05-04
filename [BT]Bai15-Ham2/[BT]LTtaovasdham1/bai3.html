@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr><td><input type="number" id="txta" placeholder="nhập số a"> </td></tr>
+    <tr><td><input type="number" id="txtb" placeholder="nhập số b"> </td></tr>
+    <tr><td><input type="button" onclick="alear()" value="Click"> </td></tr>
+</table>
+<script>
+  function alear() {
+      let i = parseFloat(document.getElementById("txta").value);
+      let b = parseFloat(document.getElementById("txtb").value);
+      if (i>b){
+          alert("a lớn hơn b")
+      } else if (i<=b) {
+
+          sum = i + b;
+          alert(sum);
+      }
+
+
+  }
+
+</script>
+</body>
+</html>

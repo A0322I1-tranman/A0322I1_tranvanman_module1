@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   function ktr(a,V) {
+       var count = 0;
+      for (i=0;i<a.length;i++){
+               if (a[i]==V){
+              count+=1;
+          }
+      }
+      if (count==0){
+          return false;
+      }else {
+          return count;
+      }
+   }
+   let i = ['x','b','s','b'];
+   let n = prompt("nhập kí tự");
+   alert(ktr(i,n));
+</script>
+</body>
+</html>
