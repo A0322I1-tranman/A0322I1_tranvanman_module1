@@ -6,21 +6,21 @@
 </head>
 <body>
 <script>
-    function isPalindrome(s) {
-        let i = prompt("nhập chuỗi");
-        let a = [];
-        a.push(i);
-        for (s=0;s<a.length;s++){
-            if (a.reverse(s)==a[i]){
-                document.write("chuỗi đối xứng");
-                break;
-            }else {
-                document.write("chuỗi không đối xứng");
-            }
-        }
-    }
-   let result = isPalindrome();
-    document.write(result);
+function isPalindrome(s) {
+  for (i=0;i<s.length;i++){
+      if (s[i]===s[s.length-i-1]){
+          alert("số đối xứng");
+          break;
+      }else {
+          alert("số không đối xứng");
+          break;
+      }
+  }
+  return a;
+}
+let a = prompt('nhập chuỗi');
+alert(isPalindrome(a))
+
 </script>
 </body>
 </html>
