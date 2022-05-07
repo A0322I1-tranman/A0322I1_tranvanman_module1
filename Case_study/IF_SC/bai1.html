@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px, solid black", style="text-align: center">
+    <tr>
+        <th>Thu nhập (triệu)</th>
+        <th>Thuế suất</th>
+        <th>Thu nhập cá nhân</th>
+    </tr>
+    <tr>
+        <td>Dưới 7 </td>
+        <td>5%</td>
+        <td ><span style="color: red; display: block" id="tn1"></span></td>
+    </tr>
+    <tr>
+        <td> 7-15 </td>
+        <td>10%</td>
+        <td ><span style="color: red; display: block" id="tn2"></span></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>20%</td>
+        <td ><span style="color: red; display: block" id="tn3"></span></td>
+    </tr>
+</table></br>
+<input type="text" id="txt">
+<input type="button" value="Add" onclick="getdata()"><br>
+
+<script>
+function getdata() {
+    let tncn;
+    let i=Number(document.getElementById("txt").value);
+  if (i<7){
+      tncn=i*5/100;
+      document.getElementById("tn1").innerText=tncn;
+  }else if (i>=7 && i<15){
+        tncn=i*10/100;
+        document.getElementById("tn2").innerText=tncn;
+    }else {
+      tncn=i*20/100;
+      document.getElementById("tn3").innerText=tncn;
+  }
+}
+
+</script>
+</body>
+</html>
