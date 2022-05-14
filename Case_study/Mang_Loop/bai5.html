@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" cellspacing="0" style="text-align: center" >
+    <tr>
+        <th >STT</th>
+        <th >Tên Món</th>
+        <th >Đơn giá (đồng /ly)</th>
+        <th >Số lượng</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><input type="button" value="Cafe" onclick="set(1)"></td>
+        <td>15000</td>
+        <td><span id="s1" style="color: red"></span> </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><input type="button" value="Cam vắt" onclick="set(2)"></td>
+        <td>18000</td>
+        <td><span id="s2" style="color: red"></span> </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><input type="button" value="Nước ép cà rốt" onclick="set(3)"></td>
+        <td>20000</td>
+        <td><span id="s3" style="color: red"></span> </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><input type="button" value="Nước ép cà chua" onclick="set(4)"></td>
+        <td>20000</td>
+        <td><span id="s4" style="color: red"></span> </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><input type="button" value="Nước lọc" onclick="set(5)"></td>
+        <td>10000</td>
+        <td><span id="s5" style="color: red"></span> </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><input type="button" value="Nước dừa" onclick="set(6)"></td>
+        <td>25000</td>
+        <td><span id="s6" style="color: red"></span> </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td colspan="4"><input type="button" value="Thoát - Gọi món" onclick="set(7)"></td>
+    </tr>
+</table><br>
+<span id="f1" style="color: blue"></span> <br>
+<span id="f2" style="color: orange"></span><br>
+<script>
+    let total =0;
+    let chon = 'Bill: ';
+    function set(number) {
+
+        if (number==7){
+            alert("Số tiền phải trả: " + total)
+            total = 0;
+            chon = " Bill: ";
+            document.getElementById("f1").innerText = total;
+            document.getElementById("f2").innerText = chon;
+        }else {
+            let i = parseInt(prompt("nhập số lượng"));
+          switch (number) {
+            case 1:
+                total += i * 15000;
+                chon += " cafe số lượng: " + i + 'có giá: '+ i*15000 ;
+                document.getElementById("s1").innerText = i;
+               break;
+            case 2:
+                total += i * 18000;
+                chon += " Cam vắt số lượng: " + i + 'có giá: '+ i*18000;
+                document.getElementById("s2").innerText = i;
+
+                break;
+            case 3:
+                total += i * 20000;
+                chon += " Nước ép cà rốt số lượng: " + i + 'có giá: '+ i*20000;
+                document.getElementById("s3").innerText = i ;
+                break;
+            case 4:
+                total += i * 20000;
+                chon += "Nước ép cà chua số lượng: " + i + 'có giá: '+ i*20000;
+                document.getElementById("s4").innerText = i ;
+                break;
+            case 5:
+                total += i * 10000;
+                chon += "Nước suối số lượng: " + i + 'có giá: '+ i*10000;
+                document.getElementById("s5").innerText = i ;
+                break;
+            case 6:
+                total += i * 25000;
+                chon += "Nước dừa số lượng: " + i + 'có giá: '+ i*25000;
+                document.getElementById("s6").innerText = i ;
+                break;
+        }
+        document.getElementById("f1").innerText = total;
+        document.getElementById("f2").innerText = chon;
+        }
+
+    }
+</script>
+</body>
+</html>

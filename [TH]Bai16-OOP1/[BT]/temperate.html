@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperate{
+        constructor(doC) {
+            this.doC = doC;
+        }
+        changeF(){
+            return ((this.doC*1.8)+32);
+        }
+        changeK(){
+            return this.doC + 273.15;
+        }
+    }
+    let temperate = new Temperate(25);
+    document.write('Độ F: '+ temperate.changeF()+ '<br>' );
+    document.write('Độ K: '+ temperate.changeK());
+</script>
+</body>
+</html>

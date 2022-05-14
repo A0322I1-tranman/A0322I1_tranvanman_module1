@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let a = ['o','u','i','a','e'];
+    let b = ['O','U','I','A','E'];
+    let i = prompt('nhập ký tự');
+    for (j=0;j<i.length;j++){
+        if (b.includes(i[j])||a.includes(i[j])){
+            document.write(i + ' là nguyên âm.');
+        }else {
+            document.write(i + ' là phụ âm');
+        }
+    }
 
+</script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+       let c = prompt('nhập số');
+        let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+        let b = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín', 'không'];
+          for (i=0;i<a.length;i++) {
+              if (a.indexOf(parseInt(c[i])) > -1) {
+                  let j=a.indexOf(parseInt(c[i]));
+                  document.write(b[j]+ " ");
+
+              }
+          }
+
+
+</script>
+</body>
+</html>
