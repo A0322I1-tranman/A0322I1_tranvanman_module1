@@ -7,6 +7,20 @@
 <body>
 <script>
     let a = '  tRuong  TaN HAI';
+    for (let i=0;i<a.length;i++){
+        a.trim();
+        if (a[0] == ' '){
+            a[i+1] = a.toUpperCase();
+        } else if (a[i]==' '){
+            a[i+1] = a.toUpperCase()
+        }else {
+            a.toLowerCase();
+        }
+    }
+    document.write(a);
+
+
+
 </script>
 </body>
 </html>

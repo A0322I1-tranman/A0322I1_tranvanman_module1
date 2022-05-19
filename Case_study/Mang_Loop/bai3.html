@@ -8,7 +8,18 @@
 <script>
     let a = [4,3,6,7,9];
     let b = [5,2,8,9,4];
-    let c = a/b;
+   let max = parseFloat(a[0]/b[0]);
+   let indexmax = 0;
+    for (let index in a){
+      let frac = parseFloat(a[index]/b[index])
+        {
+            if (frac > max){
+                max = frac;
+                indexmax = index;
+            }
+        }
+    }
+    document.write(indexmax + '<br>' + parseFloat(max));
 
 </script>
 </body>

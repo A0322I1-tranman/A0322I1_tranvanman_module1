@@ -6,16 +6,19 @@
 </head>
 <body>
 <script>
-    let a = 'cabca';
+    let a = 'manbca';
     let b =a.split('');
-    let sotu = 0;
-    let z;
-  for (let i=0;i<b.length;i++){
-      if (b[i]!==b[i+1]){
-          sotu+=1;
-      }
-  }
-    console.log(sotu +' '+ b);
+    let c = [];
+    let sotu=0
+    for (let i=0;i<b.length;i++){
+        if (c.indexOf(b[i])==-1){
+            c.push(b[i]);
+            sotu+=1;
+        }
+    }
+    console.log(c);
+    console.log(sotu);
+
 </script>
 </body>
 </html>

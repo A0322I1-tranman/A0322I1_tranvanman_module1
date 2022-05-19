@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = "aabcc";
+    let b = "adcaa";
+    let c = a.split('');
+    let d = b.split('');
+
+    let sotu = 0;
+for (let indexc in c){
+    for (let indexd in d){
+        if (c[indexc]==d[indexd]){
+            c.splice(indexc,1);
+            d.splice(indexd,1);
+            sotu++;
+        }
+    }
+}
+    console.log(sotu);
+    console.log(c);
+    console.log(d);
+
+</script>
+</body>
+</html>
