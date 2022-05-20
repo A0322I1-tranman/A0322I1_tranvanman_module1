@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt('nhập phần tử M'));
+    let n = parseInt(prompt('nhập phần tử N'));
+    let total = 0;
+    let a = new Array(m);
+    for (let i=0;i<a.length;i++) {
+        a[i] = new Array(n);
+        for (let j = 0; j < a[i].length; j++) {
+            let value = parseInt(prompt('nhập [' + i + '][' + j + ']'));
+            a[i][j] = value;
+        }
+    }
+    for (let i=0;i<a.length;i++){
+        for (let j=0;j<a[i].length;j++){
+            if (a[i][j]%2==0){
+                total = total + a[i][j];
+            }
+        }
+    }
+    console.log(a);
+    console.log(total);
+</script>
+</body>
+</html>

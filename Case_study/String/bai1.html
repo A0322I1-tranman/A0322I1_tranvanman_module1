@@ -7,18 +7,21 @@
 <body>
 <script>
     let a = '  tRuong  TaN HAI';
-    for (let i=0;i<a.length;i++){
-        a.trim();
-        if (a[0] == ' '){
-            a[i+1] = a.toUpperCase();
-        } else if (a[i]==' '){
-            a[i+1] = a.toUpperCase()
-        }else {
-            a.toLowerCase();
-        }
-    }
-    document.write(a);
-
+   let b = a.toLowerCase().split('');
+       for (let i = 0; i < b.length; i++) {
+           if (b[i] == ' ' && b[i + 1] == b[i]) {
+               b.splice(b[i], 1);
+           }
+       }
+   for (let index in b){
+       if (index==0){
+           b[index]=b[index].toUpperCase();
+       }
+       if (b[index]==' '){
+           b[index+1]=b[index+1].toUpperCase();
+       }
+   }
+    console.log(b);
 
 
 </script>
