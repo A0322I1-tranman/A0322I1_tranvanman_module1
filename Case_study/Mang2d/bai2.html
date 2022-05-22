@@ -6,9 +6,54 @@
 </head>
 <body>
 <script>
+    function kiem_tra_snt(n)
+    {
+        // Biến cờ hiệu
+        var flag = true;
 
+        // Nếu n bé hơn 2 tức là không phải số nguyên tố
+        if (n < 2){
+            flag = false;
+        }
+        else{
+            // lặp từ 2 tới n-1
+            for (var i = 2; i < n-1; i++)
+            {
+                if (n % i == 0){
+                    flag = false;
+                    break;
+                }
+            }
+        }
 
+        // Kiểm tra biến flag
+        if (flag == true){
+            document.write(n + " là số nguyên tố <br/>");
+            dem++;
+        }
+        else{
+            document.write(n + " không phải là số nguyên tố <br/>");
+        }
+    }
 
+    let m = parseInt(prompt('Nhập M'));
+    let n = parseInt(prompt('Nhập N'));
+
+    //Tạo mảng 2 chiều với số hàng là m và số cột là n;
+    let arr = new Array(m);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(n);
+    }
+    let dem = 0;
+    let check;
+    for (let x= 0;x<m;x++){
+        for (let y =0; y<n;y++){
+            arr[x][y]= parseInt(prompt('Nhập phần tử '+ "arr["+x+']['+y+']'));
+            kiem_tra_snt(arr[x][y]);
+        }
+    }
+    console.log(dem);
+    console.log(arr);
 </script>
 </body>
 </html>

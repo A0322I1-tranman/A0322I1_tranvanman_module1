@@ -6,24 +6,20 @@
 </head>
 <body>
 <script>
-    let a = '  tRuong  TaN HAI';
-   let b = a.toLowerCase().split('');
-       for (let i = 0; i < b.length; i++) {
-           if (b[i] == ' ' && b[i + 1] == b[i]) {
-               b.splice(b[i], 1);
-           }
-       }
-   for (let index in b){
-       if (index==0){
-           b[index]=b[index].toUpperCase();
-       }
-       if (b[index]==' '){
-           b[index+1]=b[index+1].toUpperCase();
-       }
-   }
-    console.log(b);
+    let a = "  tRuong  TaN HAI"
+    let arr = a.trimStart().split('');
+    let arr1 =[];
+    for (let i = 0; i<arr.length;i++){
+        if (arr[i] == ' '&& arr[i+1]== ' '){
+            arr.splice(arr[i],1);
+        }else if (arr[i] != ' ' && arr[i+1]==' ') {
+            arr1.push(arr[i]);
+        } else {
+            arr1.push(arr[i])
+        }
+    }
 
-
+    console.log(arr1);
 </script>
 </body>
 </html>

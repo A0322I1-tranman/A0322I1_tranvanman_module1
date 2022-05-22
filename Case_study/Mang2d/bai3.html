@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    let array = new Array(6);
+    let array = new Array(10);
     for (let i=0;i<array.length;i++){
-        array[i]=new Array(5);
+        array[i]=new Array(2);
         for (let j=0;j<array[i].length;j++){
              array[i][j] = Math.floor(Math.random()*10);
         }
     }
     let max = array[0][0];
     for (let i=0;i<array.length;i++){
-        for (let j=0;j<array.length;j++){
+        for (let j=0;j<array[i].length;j++){
             if (max<array[i][j]){
                 max = array[i][j];
             }
@@ -23,7 +23,7 @@
     }
     let Min =array[0][0];
     for (let i=0;i<array.length;i++){
-        for (let j=0;j<array.length;j++){
+        for (let j=0;j<array[i].length;j++){
             if (Min>array[i][j]){
                 Min = array[i][j];
             }
