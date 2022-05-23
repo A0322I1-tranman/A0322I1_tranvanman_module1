@@ -7,7 +7,7 @@
 <body>
 <div><p id="result"></p> </div>
 <input type="button" onclick="menu()" value="Mua vé">
-<input type="button"  value="Xem kết quả">
+<input type="button" onclick="displayResult()" value="Xem kết quả">
 <script>
     class Lottery{
         constructor(number1, number2, number3, number4, number5, number6, grade = "") {
@@ -58,11 +58,11 @@
         setGrade(grade){
             this.grade = grade;
         }
-        getgrade(){
+        getGrade(){
             return this.grade;
         }
         getNumber(){
-            return [this.number1, this.number2,this.number3, this.number4, this.number5, this.number6];
+            return [this.number1, this.number2, this.number3, this.number4, this.number5, this.number6];
         }
         getRandomNumber(){
             this.setNumber1(Math.floor(Math.random()*99));
@@ -121,6 +121,55 @@
      let lottery = new Lottery(arrNum[0],arrNum[1],arrNum[2],arrNum[3],arrNum[4],arrNum[5], );
       arrLottery.push(lottery);
       drawLottery(arrLottery);
+    }
+    function checkResult(lottery) {
+      let count = 0;
+      let arr = [11,22,33,44,55,66];
+      for (let i=arr.length-1;i>=0;i--){
+          if (arr[i]=== lottery.getNumber()[i]){
+              count++;
+          }else {
+              break;
+          }
+      }
+      switch (count) {
+         case 6:
+             lottery.setGrade(1);
+             break;
+         case 5:
+             lottery.setGrade(2);
+             break;
+         case 4:
+         case 3:
+             lottery.setGrade(3);
+             break;
+         default:
+             lottery.setGrade(4);
+             break;
+      }
+    }
+    function displayResult() {
+        let result = "";
+        for (let i=0;i<arrLottery.length;i++){
+            checkResult(arrLottery[i]);
+            switch (arrLottery[i].getGrade()) {
+              case 1:
+                  result+=" Giải nhất ";
+                  break;
+              case 2:
+                  result+=" Giải nhì ";
+                  break;
+              case 3:
+                  result+="Giải khuyến khích";
+
+
+            }
+        }
+        if (result===""){
+            alert(" Chúc bạn may mắn lần sau");
+        }else {
+            alert("Chúc mừng bạn đã trúng: " + result);
+        }
     }
 
 </script>
