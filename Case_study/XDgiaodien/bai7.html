@@ -4,7 +4,77 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<style>
+    table{
+        width: 100%;
+        border-spacing: unset;
+    }
+    .header td{
+        text-align: center;
+    }
+    .left select{
+        margin-bottom: 15px;
+        width: 150px;
+    }
+    .body td{
+        border: 2px solid black;
+        padding: 15px;
+    }
+    .left{
+        width: 20%;
+        text-align: center;
 
+    }
+    .body{2
+        height: 500px;
+    }
+</style>
+<body>
+<table>
+    <tr class="header">
+        <td><img width="100" src="data:image/jpeg;base64,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"/></td>
+        <td> Hệ Thống quản lý bài tập Casestudy module 1 </td>
+    </tr>
+    <tr class="body">
+        <td class="left">
+            <select>
+                <option selected>Bài tập 1</option>
+                <option >Bài tập 2</option>
+                <option >Bài tập 3</option>
+                <option >Bài tập 4</option>
+                <option >Bài tập 5</option>
+            </select> <br>
+            <select>
+                <option >Bài tập 1</option>
+                <option selected>Bài tập 2</option>
+                <option >Bài tập 3</option>
+                <option >Bài tập 4</option>
+                <option >Bài tập 5</option>
+            </select> <br>
+            <select>
+                <option >Bài tập 1</option>
+                <option >Bài tập 2</option>
+                <option selected>Bài tập 3</option>
+                <option >Bài tập 4</option>
+                <option >Bài tập 5</option>
+            </select> <br>
+            <select>
+                <option >Bài tập 1</option>
+                <option >Bài tập 2</option>
+                <option >Bài tập 3</option>
+                <option selected>Bài tập 4</option>
+                <option >Bài tập 5</option>
+            </select> <br>
+            <select>
+                <option >Bài tập 1</option>
+                <option >Bài tập 2</option>
+                <option >Bài tập 3</option>
+                <option >Bài tập 4</option>
+                <option selected>Bài tập 5</option>
+            </select> <br>
+        </td>
+        <td></td>
+    </tr>
+</table>
 </body>
 </html>
